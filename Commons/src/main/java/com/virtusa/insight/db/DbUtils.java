@@ -22,7 +22,7 @@ public class DbUtils {
     }
 
     /**
-     * @return DataBase connection
+     * @return DataBase connection.
      */
     public static ODatabaseDocumentTx dbConnection() throws FileNotFoundException {
 
