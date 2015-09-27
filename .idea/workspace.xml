@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="197e9f6c-e6c6-4530-8a1a-c506123ad8d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/DbUtils.java" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/DbUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/Configuration.java" afterPath="$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/Configuration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="orient.iws" />
@@ -27,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DbUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DbUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/DbUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36021507">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Configuration.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/Configuration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.78673834">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -51,6 +61,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/DbUtils.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/Configuration.java" />
       </list>
     </option>
   </component>
@@ -263,7 +274,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443338272727</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add comment">
+      <created>1443338743357</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1443338743357</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -309,8 +326,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/DbUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36021507">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/com/virtusa/insight/db/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78673834">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
           <folding />
         </state>
       </provider>

@@ -36,7 +36,7 @@ public class Configuration {
     }
 
     /**
-     * @return user name fro dataBase
+     * @return user name fro dataBase.
      */
     public String getUserName() {
         return userName;
