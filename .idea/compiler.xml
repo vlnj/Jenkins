@@ -24,16 +24,12 @@
         <processorPath useClasspath="true" />
         <module name="Commons" />
         <module name="Test" />
-        <module name="Util" />
-        <module name="Utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Commons" target="1.5" />
-      <module name="OrientSample" target="1.5" />
+      <module name="orient" target="1.5" />
       <module name="Test" target="1.5" />
-      <module name="Util" target="1.5" />
-      <module name="Utils" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
  */
 public class DbUtils {
     /**
-     * Logger.
+     * Logger Initialised.
      */
     final static Logger LOGGER = Logger.getLogger(DbUtils.class);
     private static ODatabaseDocumentTx db = null;
