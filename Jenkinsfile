@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        archiveArtifacts 'target/*.jar'
+        archiveArtifacts 'C:/Users/lnvithanage/.jenkins/workspace/Jenkins_master-5WKQ4BTGQNLTBDVPBKPKFG5WYDM2XY5LI5THOPHXAJJFFZAAWTIA/Commons/target/*.jar'
       }
     }
   }
