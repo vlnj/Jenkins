@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'mvn clean install'
+        bat(script: 'C:\\Work\\batch\\build.bat', encoding: 'utf-8', returnStdout: true)
       }
     }
     stage('Test') {
