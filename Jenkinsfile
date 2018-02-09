@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        bat(script: 'C:\\Work\\batch\\init.bat', encoding: 'utf-8', returnStdout: true)
+        bat 'mvn clean'
       }
     }
     stage('Build') {
       steps {
-        bat(script: 'C:\\Work\\batch\\build.bat', encoding: 'utf-8', returnStdout: true)
+        bat 'mvn clean install'
       }
     }
     stage('Test') {
