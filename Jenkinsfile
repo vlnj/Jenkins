@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        sh '''echo PATH = %PATH%
-echo M2_HOME = %M2_HOME%
-mvn clean'''
+        bat(script: 'C:\\Work\\batch\\init.bat', encoding: 'utf-8', returnStdout: true)
       }
     }
     stage('Build') {
