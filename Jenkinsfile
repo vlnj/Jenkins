@@ -2,17 +2,8 @@ pipeline {
   agent any
   stages {
     stage('Initialize') {
-      parallel {
-        stage('Initialize') {
-          steps {
-            bat 'mvn clean'
-          }
-        }
-        stage('error') {
-          steps {
-            readFile(file: 'C:\\User\\.jenkins\\workspace\\Jenkins_master-5WKQ4BTGQNLTBDVPBKPKFG5WYDM2XY5LI5THOPHXAJJFFZAAWTIA\\pom.xml', encoding: 'utf-8')
-          }
-        }
+      steps {
+        bat 'mvn clean'
       }
     }
     stage('Build') {
