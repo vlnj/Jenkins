@@ -8,9 +8,9 @@ pipeline {
             bat 'mvn clean'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            readFile(file: 'pom.xml', encoding: 'utf-8')
+            readFile(file: 'C:\\Users\\lnvithanage\\.jenkins\\workspace\\Jenkins_master-5WKQ4BTGQNLTBDVPBKPKFG5WYDM2XY5LI5THOPHXAJJFFZAAWTIA\\pom.xml', encoding: 'utf-8')
           }
         }
       }
