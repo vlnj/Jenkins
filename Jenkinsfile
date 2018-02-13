@@ -2,8 +2,17 @@ pipeline {
   agent any
   stages {
     stage('Initialize') {
-      steps {
-        bat 'mvn clean'
+      parallel {
+        stage('Initialize') {
+          steps {
+            bat 'mvn clean'
+          }
+        }
+        stage('') {
+          steps {
+            readFile(file: 'pom.xml', encoding: 'utf-8')
+          }
+        }
       }
     }
     stage('Build') {
