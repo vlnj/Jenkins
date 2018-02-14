@@ -1,18 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Initialize') {
-      parallel {
-        stage('Checkout') {
-          steps {
-            git 'https://github.com/vlnj/Jenkins.git'
-          }
-        }
-        stage('Pre clean') {
-          steps {
-            bat 'mvn clean'
-          }
-        }
+    stage('Checkout') {
+      steps {
+        git 'https://github.com/vlnj/Jenkins.git'
       }
     }
     stage('Build') {
@@ -21,8 +12,22 @@ pipeline {
       }
     }
     stage('Test') {
-      steps {
-        echo 'Testing ...'
+      parallel {
+        stage('Firefox') {
+          steps {
+            echo 'Testing Firefox'
+          }
+        }
+        stage('Chrome') {
+          steps {
+            echo 'Testing Chrome'
+          }
+        }
+        stage('Safari') {
+          steps {
+            echo 'Testing Safari'
+          }
+        }
       }
     }
     stage('Deploy') {
