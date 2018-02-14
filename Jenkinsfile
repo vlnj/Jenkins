@@ -21,6 +21,9 @@ pipeline {
         stage('Chrome') {
           steps {
             echo 'Testing Chrome'
+            def response = httpRequest "http://localhost:6029/configar-api/test"
+            echo response.content
+            
           }
         }
         stage('Safari') {
