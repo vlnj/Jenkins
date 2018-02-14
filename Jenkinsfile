@@ -2,8 +2,17 @@ pipeline {
   agent any
   stages {
     stage('Initialize') {
-      steps {
-        bat 'mvn clean'
+      parallel {
+        stage('Initialize') {
+          steps {
+            bat 'mvn clean'
+          }
+        }
+        stage('Build') {
+          steps {
+            echo 'building'
+          }
+        }
       }
     }
     stage('Build') {
