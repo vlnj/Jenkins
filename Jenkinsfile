@@ -1,16 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('Init') {
+    stage('Initialize') {
       parallel {
-        stage('Initialize') {
+        stage('Checkout') {
           steps {
-            bat 'mvn clean'
+            git 'https://github.com/vlnj/Jenkins.git'
           }
         }
-        stage('Build') {
+        stage('Pre clean') {
           steps {
-            echo 'building'
+            bat 'mvn clean'
           }
         }
       }
