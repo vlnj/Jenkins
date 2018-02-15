@@ -20,12 +20,17 @@ pipeline {
         }
         stage('Chrome') {
           steps {
-            echo 'Testing Chrome'    
+            echo 'Testing Chrome'
           }
         }
         stage('Safari') {
           steps {
             echo 'Testing Safari'
+          }
+        }
+        stage('Explorer') {
+          steps {
+            echo 'testing explorer'
           }
         }
       }
