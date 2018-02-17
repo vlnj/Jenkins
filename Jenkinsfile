@@ -36,8 +36,17 @@ pipeline {
       }
     }
     stage('Deploy') {
-      steps {
-        archiveArtifacts 'Commons/target/*.jar'
+      parallel {
+        stage('Deploy') {
+          steps {
+            archiveArtifacts 'Commons/target/*.jar'
+          }
+        }
+        stage('') {
+          steps {
+            svn 'svn://YOURCOMPUTERNAME/repository/project/trunk'
+          }
+        }
       }
     }
   }
