@@ -42,9 +42,9 @@ pipeline {
             archiveArtifacts 'Commons/target/*.jar'
           }
         }
-        stage('') {
+        stage('SVN') {
           steps {
-            svn 'svn://YOURCOMPUTERNAME/repository/project/trunk'
+            svn 'https://svn.riouxsvn.com/analyzer-go'
           }
         }
       }
